@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evcil Hayvan Otomasyonu</title>
+</head>
+<body>
+    <h1>Evcil Hayvan Otomasyonu</h1>
+    <div class="menu">
+        <p><b>Evcil hayvanınız için en kaliteli ve en uygun fiyatlı
+        <a href="https://www.temizmama.com">Mamalar</a> </p></b>
+        <br>
+        <p><b>Evcil hayvanınızın en ufak rahatsızlığında gönül rahatlığıyla gidebileceğiniz
+        <a href="https://www.galaveteriner.com">Veterinerler</a></b></p>
+        
+
+        <br><br>
+
+    
+<div class="menu">
+    <button onclick="kategoriListele('kedi')">Kediler Menüsü</button>
+    <button onclick="kategoriListele('kopek')">Köpekler Menüsü</button>
+    <button onclick="kategoriListele('tavsan')">Tavşanlar Menüsü</button>
+    <button onclick="kategoriListele('hepsi')">Tüm Hayvanlar</button>
+</div>
+
+<div id="gosterim-alani" class="kart-konteyner">
+    <h3>Lütfen bir kategori seçin.</h3>
+</div>
+
+<section id="randevu-bolumu" style="margin-top: 50px; padding: 20px; background: #fff5f5; border-radius: 20px;">
+    <h2>Veteriner Randevu Sistemi</h2>
+    <form id="randevu-formu" onsubmit="randevuAl(event)">
+        <label>Evcil Hayvanın Adı:</label><br>
+        <input type="text" id="evcil-ad" required placeholder="">
+        <br><br>
+ 
+        <label>Randevu Tarihi:</label><br>
+        <input type="date" id="randevu-tarih" required><br><br>
+
+        <label>Veteriner Seçimi:</label><br>
+        <select id="veteriner-secim">
+            <option value="Dr. Liva Öztürk">Dr. Liva Öztürk (Genel Cerrahi)</option>
+            <option value="Dr. Sahira İnce">Dr. Sahira İnce (İç Hastalıkları)</option>
+        </select><br><br>
+
+        <button type="submit" style="background-color: #ffb3b3;">Randevu Oluştur</button>
+    </form>
+</section>
+
+<script src="script.js"></script>
+
+        
+    
+</body>
+</html>
