@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evcil Hayvan Otomasyonu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Evcil Hayvan Otomasyonu</h1>
+    <div class="menu">
+        <p><b>Evcil hayvanınız için en kaliteli ve en uygun fiyatlı
+        <a href="https://www.temizmama.com">Mamalar</a> </p></b>
+        <br>
+        <p><b>Evcil hayvanınızın en ufak rahatsızlığında gönül rahatlığıyla gidebileceğiniz
+        <a href="https://www.galaveteriner.com">Veterinerler</a></b></p>
+        <hr>
+        
+
+        <br><br>
+
+    <hr>
+<div class="menu">
+    <button onclick="categoryList('cat')">Kediler Menüsü</button>
+    <button onclick="categoryList('dog')">Köpekler Menüsü</button>
+    <button onclick="categoryList('rabbit')">Tavşanlar Menüsü</button>
+    <button onclick="categoryList('all')">Tüm Hayvanlar</button>
+</div>
+
+<div id="display-area" class="card-container">
+    <h3>Lütfen bir kategori seçin.</h3>
+</div>
+
+<section id="appointment-section" style="margin-top: 50px; padding: 20px; background: #fff5f5; border-radius: 20px;">
+    <h2>Veteriner Randevu Sistemi</h2>
+    <form id="appointment-form" onsubmit="makeAppointment(event)">
+        <label>Evcil Hayvanın Adı:</label><br>
+        <input type="text" id="pet-name" required placeholder="">
+        <br><br>
+ 
+        <label>Randevu Tarihi:</label><br>
+        <input type="date" id="appointment-date" required><br><br>
+
+        <label>Doktor Seçimi:</label><br>
+        <select id="veterinary-choice">
+            <option value="Dr. Liva Öztürk">Dr. Liva Öztürk (Genel Cerrahi)</option>
+            <option value="Dr. Sahira İnce">Dr. Sude İnce (İç Hastalıkları)</option>
+        </select><br><br>
+
+        <button type="submit" style="background-color: #ffb3b3;">Randevu Oluştur</button>
+    </form>
+</section>
+
+<p id="animals"></p>
+
+
+  <hr>
+
+    <div class="transactions">
+        <button onclick="addAnimal()">Yeni Hayvan Ekle </button>
+        <button onclick="deleteLastAnimal()">Son Hayvanı Sil </button>
+    </div>
+
+    <hr>
+
+
+    <p>Kedi kelimesi kaç harfli? </p>
+<p id="cat"></p>
+
+
+<p id="dog"></p>
+
+
+
+<p id="demo"></p>
+
+
+<p id="demo1"></p>
+
+
+<p id="demo2"></p>
+
+<p id="demo3"></p>
+
+<p id="demo4"></p>
+
+<p id="demo5"></p>
+
+<p id="demo6"></p>
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+        
+    
+</body>
+</html>
