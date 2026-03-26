@@ -6,7 +6,7 @@ const pets = [
     { name: "Ori", type: "rabbit", breed: "Rex Tavşanı", age: 2, picture: "https://images.petlebi.com/v7/_ptlb/up/gallery/rex-tavsani-genel-ozellikler-4458.jpg" },
     { name: "Karbeyaz", type: "rabbit", breed: "Mini Lop", age: 4, picture: "https://images.petlebi.com/v7/_ptlb/up/gallery/hollanda-lop-tavsani-genel-ozellikleri-9043.jpeg"}
 ];
-
+123
 function categoryList(selectedType) {
     const alan = document.getElementById('display-area');
     alan.innerHTML = ""; 
