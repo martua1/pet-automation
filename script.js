@@ -155,7 +155,7 @@ function myFirst() {
 }
 
 function mySecond() {
-  myFirstDisplayer("Bu yüzden kedilere yılda bir idrar tahlili yaptırmak önemlidir.");
+  myFirstDisplayer("Bu yüzden kedilere yılda bir çiş tahlili yaptırmak önemlidir.");
 }
 
 myFirst();
